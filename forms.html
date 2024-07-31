@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wage Scale and Job Application Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external stylesheet -->
+</head>
+<body class="forms-page">
+
+<div id="page">
+
+    <h2>Wage Scale Based on Years of Work</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th scope="col">0-5 years</th>
+                <th scope="col">6-10 years</th>
+                <th scope="col">11-15 years</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Entry Level</th>
+                <td>$40,000</td>
+                <td>$50,000</td>
+                <td>$60,000</td>
+            </tr>
+            <tr>
+                <th scope="row">Mid-Level</th>
+                <td>$55,000</td>
+                <td>$65,000</td>
+                <td>$75,000</td>
+            </tr>
+            <tr>
+                <th scope="row" rowspan="2">Senior Level</th>
+                <td colspan="3">plus yearly bonus</td>
+            </tr>
+            <tr>
+                <td>$90,000</td>
+                <td>$100,000</td>
+                <td>$110,000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Job Application Form</h2>
+
+    <form action="https://example.com/submit-form" method="post">
+        
+        <fieldset>
+            <legend>Contact Information</legend>
+            
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" required>
+            
+        </fieldset>
+        
+        <fieldset>
+            <legend>Resume</legend>
+            
+            <label for="resume">Upload your Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            
+            <label for="message">Additional Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write a brief message (optional)"></textarea>
+        </fieldset>
+        
+        <input type="submit" value="Submit Application">
+    </form>
+
+</div>
+
+<footer>
+    <p>&copy; <span id="2024"></span> 2024 Internet Fundamentals by Taylor Gallop. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
